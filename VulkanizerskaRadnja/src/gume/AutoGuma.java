@@ -1,10 +1,9 @@
 package gume;
 
 /**
- * Lista objekata klase AutoGuma predstavljace sve vrste guma u jednoj
- * vulkanizerskoj radnji.
+ * Predstavlja jednu vrstu gume u vulkanizerskoj radnji.
  * 
- * @author user
+ * @author Uros Veljkovic
  * @version 0.1
  */
 public class AutoGuma {
