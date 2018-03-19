@@ -1,2 +1,1 @@
-Uraditi commit sa naznacenom porukom da je uradjena test classa
-U novoj grani ispraviti greske kod logicke kontrole u klasi AutoGuma
+Generisati javadoc za ceo projekat pa uraditi commit
