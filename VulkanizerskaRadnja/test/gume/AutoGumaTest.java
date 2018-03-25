@@ -109,6 +109,7 @@ public class AutoGumaTest {
 
 	@Test
 	public void testEqualsObjectTest() {
+		//Zasto mi je naziv gume opel astra? Ne znam, al bitna je poenta
 		guma.setMarkaModel("Opel Astra");
 		guma.setPrecnik(15);
 		guma.setSirina(150);

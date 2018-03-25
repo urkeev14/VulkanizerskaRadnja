@@ -59,7 +59,7 @@ public class AutoGuma {
 	 * @throws java.lang.RuntimeException.class ako je uneti parametar manji od 13 ili veci od 22
 	 */
 	public void setPrecnik(int precnik) {
-		if (precnik < 13 && precnik > 22)
+		if (precnik < 13 || precnik > 22)
 			throw new RuntimeException("Precnik van opsega");
 		this.precnik = precnik;
 	}
