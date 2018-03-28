@@ -78,7 +78,7 @@ public class AutoGuma {
 	 * @throws java.lang.RuntimeException.class ako je uneti parametar manji od 135 ili veci od 355
 	 */
 	public void setSirina(int sirina) {
-		if (sirina < 135 && sirina > 355)
+		if (sirina < 135 || sirina > 355)
 			throw new RuntimeException("Sirina van opsega");
 		this.sirina = sirina;
 	}
@@ -115,7 +115,8 @@ public class AutoGuma {
 	/**
 	 * Proverava da li je konkretan objekat isti kao objekat zadat u parametru.
 	 * @param objekat tipa guma
-	 * @return true ako su objekti jednaki, u suprotnom false
+	 * @return true atributi markaModel, visina, sirna, precnik jednaki, 
+	 * u suprotnom vraca false
 	 */
 	@Override
 	public boolean equals(Object obj) {

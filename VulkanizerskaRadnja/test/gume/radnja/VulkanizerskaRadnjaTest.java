@@ -61,9 +61,10 @@ public class VulkanizerskaRadnjaTest {
 	/**
 	 * Test metoda za metodu
 	 * {@link gume.radnja.VulkanizerskaRadnja#dodajGumu(gume.AutoGuma)}
+	 * @throws Exception 
 	 */
 	@Test
-	public void testDodajGumu() {
+	public void testDodajGumu() throws Exception {
 
 		vRadnja.dodajGumu(guma);
 
@@ -75,18 +76,20 @@ public class VulkanizerskaRadnjaTest {
 	/**
 	 * Test metoda za metodu
 	 * {@link gume.radnja.VulkanizerskaRadnja#dodajGumu(gume.AutoGuma)}
+	 * @throws Exception 
 	 */
 	@Test(expected = java.lang.RuntimeException.class)
-	public void testDodajGumuNull() {
+	public void testDodajGumuNull() throws Exception {
 		vRadnja.dodajGumu(null);
 	}
 
 	/**
 	 * Test metoda za metodu
 	 * {@link gume.radnja.VulkanizerskaRadnja#dodajGumu(gume.AutoGuma)}
+	 * @throws Exception 
 	 */
 	@Test(expected = java.lang.RuntimeException.class)
-	public void testDodajGumuPrecnikVanGranice() {
+	public void testDodajGumuPrecnikVanGranice() throws Exception {
 
 		guma.setMarkaModel("Michelin");
 		guma.setPrecnik(0);
@@ -99,9 +102,10 @@ public class VulkanizerskaRadnjaTest {
 	/**
 	 * Test metoda za metodu
 	 * {@link gume.radnja.VulkanizerskaRadnja#dodajGumu(gume.AutoGuma)}
+	 * @throws Exception 
 	 */
 	@Test(expected = java.lang.RuntimeException.class)
-	public void testDodajGumuPostoji() {
+	public void testDodajGumuPostoji() throws Exception {
 		vRadnja.dodajGumu(guma);
 		vRadnja.dodajGumu(guma);
 	}
@@ -120,9 +124,10 @@ public class VulkanizerskaRadnjaTest {
 	/**
 	 * Test metoda za metodu
 	 * {@link gume.radnja.VulkanizerskaRadnja#pronadjiGumu(String)}
+	 * @throws Exception 
 	 */
 	@Test
-	public void testPronadjiGumuJednaGuma() {
+	public void testPronadjiGumuJednaGuma() throws Exception {
 
 		AutoGuma guma2 = new AutoGuma();
 		guma2.setMarkaModel("Trayal");
@@ -140,9 +145,10 @@ public class VulkanizerskaRadnjaTest {
 	/**
 	 * Test metoda za metodu
 	 * {@link gume.radnja.VulkanizerskaRadnja#pronadjiGumu(String)}
+	 * @throws Exception 
 	 */
 	@Test
-	public void testPronadjiGumuViseGuma() {
+	public void testPronadjiGumuViseGuma() throws Exception {
 
 		LinkedList<AutoGuma> pomocnaListaGuma = new LinkedList<>();
 

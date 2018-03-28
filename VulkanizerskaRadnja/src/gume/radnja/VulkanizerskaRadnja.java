@@ -17,10 +17,12 @@ public class VulkanizerskaRadnja {
 	private LinkedList<AutoGuma> gume = new LinkedList<AutoGuma>();
 
 	/**
-	 * Metoda za dodavanje nove gume u listu guma
-	 * @param objekat tipa AutoGuma
+	 * Metoda za dodavanje nove gume u listu guma.
+	 * @param objekat tipa AutoGuma.
+	 * @throws java.lang.Exception ako je objekat null ili
+	 * ako se guma nalazi u listi.
 	 */
-	public void dodajGumu(AutoGuma a) {
+	public void dodajGumu(AutoGuma a) throws Exception{
 		if (a == null)
 			throw new NullPointerException("Guma ne sme biti null");
 		if (gume.contains(a))
@@ -31,7 +33,9 @@ public class VulkanizerskaRadnja {
 	/**
 	 * Metoda koja na osnovu ulaznog parametra (String markaModel) pronalazi gumu u listi
 	 * @param String markaModel
-	 * @return
+	 * @return vraca jednu gumu ili listu guma,
+	 * u zavisnosti od broja podudaranja parametra sa atributom markaModel
+	 * sa svakom gumom u listi.
 	 */
 	public LinkedList<AutoGuma> pronadjiGumu(String markaModel) {
 		if (markaModel == null)
